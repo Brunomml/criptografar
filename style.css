@@ -9,6 +9,9 @@ body{
 
     background-color: #36393F;
     color: #fff;
+
+    margin: 0;
+    padding: 0;
 }
 
 main>section#entrada{

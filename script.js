@@ -7,14 +7,14 @@ const resposta = document.querySelector("div#resposta")
 
 
 buttonCriptografar.addEventListener("click", () => {
-    const texto = input.value
+    const texto = input.value.toLowerCase()
     const texto_encriptografado = criptografar(texto)
 
     resposta.innerText = texto_encriptografado
 })
 
 buttonDescriptografar.addEventListener("click", () => {
-    const texto = input.value
+    const texto = input.value.toLowerCase()
     const texto_encriptografado = descriptografar(texto)
 
     resposta.innerText = texto_encriptografado
