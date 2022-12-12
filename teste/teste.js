@@ -46,23 +46,15 @@ const caracteres = {
     " ": "lpcaelfly",
 }
 
-const criptografar = 
-    texto => texto
-        .split("")
-        .map(letra => caracteres[letra] ?? letra)
-        .join("")
+for(const key1 in caracteres){
+    const n1 = caracteres[key1]
+    
+    for (const key2 in caracteres) {
+        const n2 = caracteres[key2]
 
-const descriptografar = texto => {
-    for (const key in caracteres) {
-        const letra = caracteres[key]
 
-        if(texto.includes(letra)) texto = texto.replaceAll(letra, key)
+        if(n1.includes(n2) && key1 != key2){
+            console.log(key1, key2, n1, n2);
+        }
     }
-
-    return texto
-}
-
-export {
-    criptografar,
-    descriptografar
 }
