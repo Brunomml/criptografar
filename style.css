@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: row;
+
+    width: 99%;
+
+    text-align: center;
+    justify-content: center;
+
+    background-color: #36393F;
+    color: #fff;
+}
+
+main>section#entrada{
+    display: flex;
+
+    flex-direction: column;
+    text-align: center;
+
+    width: fit-content;
+}
+
+textarea{
+    resize: none;
+    width: 90vw;
+    height: calc(40vh - 44px);
+    border-color: #fff;
+    background-color: #36393F;
+    color: #fff;
+}
+
+button{
+    background-color: #0D6EFD;
+    color: #fff;
+    border-radius: 0.375rem;
+    border-style: none;
+    padding: 10px;
+    margin: 5px 0;
+}
+button:hover{
+    background-color: #0b5ed7;
+}
+button:active{
+    background-color: #0a58ca;
+}
+
+div#resposta{
+    width: 90vw;
+    word-break: break-all;
+}
+
+@media screen and (min-width: 420px) {
+    textarea, div#resposta{
+        width: 420px;
+    }
+}
